@@ -24,7 +24,7 @@ async function createCards(data, template) { // esto también podría convertirs
     templateProductImg.src = product.image; // aquí se añade la info a cada dataset o atributo html
     templateProductImg.alt = product.name;
 
-    templateh1.href = product.id;
+    templateh1.href = `details.html?id=${product.id}`;
     templateh1.textContent = product.name;
 
     templateh3.textContent = product.price;
